@@ -9,12 +9,15 @@
 
 function fibonacci(index) {
 	console.log(index);
+	//Handle edge case for negative numbers
 	if (index < 0) {
 		return 0;
 	}
+	//We have found the end of the rabbit hole
 	if (index === 1 || index === 0) {
 		return 1;
 	}
+	//Let's see how deep this rabbit hole goes...
 	return fibonacci(index-1) + fibonacci(index-2);
 }
 
